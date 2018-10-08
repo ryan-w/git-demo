@@ -52,8 +52,9 @@ git push
 # Same as running 'git fetch' and 'git merge'
 git pull
 
-# Show detail of changes between commits of working directory
+# Show detail of changes between commits or the working directory
 git diff
+git diff HEAD^
 ```
 
 ## What are Branches?
@@ -69,6 +70,9 @@ git branch my-branch
 
 # Set the working directory to the 'my-branch' branch
 git checkout my-branch
+
+# Push 'my-branch' to the remote
+git push -u origin my-branch
 
 # Merge commits from 'my-branch' into 'master'
 git checkout master
